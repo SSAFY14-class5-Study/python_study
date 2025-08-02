@@ -26,3 +26,23 @@
 ## 2-2. 커밋 메시지 예시
 [혜진] Refactor: BJ2557.py
 - 자료구조 스택으로 변경
+
+
+# 3. SWEA 간단 스니펫
+```json
+{
+  "SWEA": {
+    "prefix": "swea",
+    "body": [
+      "T = int(input())",
+      "for test_case in range(1, T + 1):",
+	  "\t# 여기에 로직을 작성해주세요",
+	  "\t$0",
+	  "\n",
+      "\tprint(f'#{test_case}')"
+      
+    ],
+    "description": "SWEA Code Snippet"
+  }
+}
+```
