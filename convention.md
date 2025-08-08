@@ -60,14 +60,14 @@
 
 - 내 github 레포지토리 접속 ->
 
-"Your branch is \_ commits ahead of ..." 메세지 확인 ->
+"Your branch is commits ahead of ..." 메세지 확인 ->
 
-Compare & pull request 버튼 클릭
+내 레포지토리 python-study ->
 
-- (없다면 organization 에 python-study ->
+Contribute 버튼 클릭 ->
+초록색 Open pull request 버튼 클릭
 
-Pull requestes 탭 ->
-New pull request 버튼 클릭)
+-> 코드 충돌 확인하고 초록색 Create pull request 버튼 클릭
 
 3.  생성된 PR 직접 머지하기
 
