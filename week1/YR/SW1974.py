@@ -1,3 +1,4 @@
+# 스도쿠
 T = int(input())    # 테스트 케이스
 
 for tc in range(1, T + 1):
