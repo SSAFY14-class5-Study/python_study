@@ -9,5 +9,5 @@ for i in range(0,6): # 0보다 크면
     chess[i]-= a[i]
     #왼쪽 변수에서 오른쪽 값을 뺀 후, 그 결과를 다시 왼쪽변수에 대입하라
 
-print(chess)
+print(*chess)
 
