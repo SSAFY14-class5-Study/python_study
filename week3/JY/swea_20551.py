@@ -1,27 +1,29 @@
-def min_candies_to_eat(A, B, C):
-    count = 0
+T = int(input())
 
-    while not(A < B < C):
+for tc in range(1, T+1):
+    A, B, C = map(int, input().split())
+    candy = 0
+
+    while not (A < B < C):
         if C <= 1:
-            return -1
-        
+            candy = -1
+            break
+
         if B >= C:
-            eat = B - (C - 1)
+            eat = B - (C - 1) 
             B -= eat
-            count += eat
+            candy += eat
 
         elif A >= B:
             if B <= 1:
-                return-1
-            eat = A - (B - 1)
+                candy = -1
+                break
+            eat = A - (B - 1)  
             A -= eat
-            count += eat
-        if A <= 0 or B <= 0:
-            return -1
-    return count
+            candy += eat
 
-T = int(input())
-for tc in range(1,T+1):
-    A, B, C = map(int,input().split())
-    ans = min_candies_to_eat(A, B, C)
-    print(f'#{tc} {ans}')
+        if A <= 0 or B <= 0:
+            candy = -1
+            break
+
+    print(f"#{tc} {candy}")
