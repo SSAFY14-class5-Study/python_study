@@ -18,4 +18,4 @@ for tc in range(1, T + 1):
 
     results = bubble_sort(num_list, N)
 
-    print(f"#{tc}", *results)
+    print(f"#{tc}", *results)  # *list : 언패킹
