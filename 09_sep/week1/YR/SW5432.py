@@ -13,9 +13,11 @@ for tc in range(1, T+1):    # 테스트 케이스
     for i in range(len(arr)):
         if arr[i] == '(':
             iron.append('(')
-        else:
-            iron.pop()
-            if arr[i-1] == '(':
+            # print('append', iron)
+        else:           # ')'
+            iron.pop()          # 여기서 열린 막대 수가 1 줄어듦
+            # print('pop', iron)
+            if arr[i-1] == '(': # 레이저
                 cnt += len(iron)        # [(, ( ,(...]
             else:
                 cnt += 1        # 막대 끝이라 잘라봤자 1개
